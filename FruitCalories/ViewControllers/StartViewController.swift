@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StartViewController.swift
 //  FruitCalories
 //
 //  Created by Павел Лахно on 04.11.2022.
@@ -35,11 +35,19 @@ enum Alert {
     }
 }
 
-class ViewController: UIViewController {
+class StartViewController: UIViewController {
 
+    var fruits: [Fruit] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchFruit()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let navigationVC = segue.destination as? UINavigationController {
+            let fruitsVC = navigationVC.topViewController as? FruitsViewController
+            fruitsVC?.fruits = fruits
+        }
     }
     
     // MARK: Private Methods
@@ -54,8 +62,8 @@ class ViewController: UIViewController {
             let decoder = JSONDecoder()
             do {
                 let fruits = try decoder.decode([Fruit].self, from: data)
-                print(fruits)
                 self?.showAlert(withStatus: .success)
+                self?.fruits = fruits
             } catch let error {
                 self?.showAlert(withStatus: .failed)
                 print(error.localizedDescription)

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B812E3C291ACFE300C1880F /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B812E3B291ACFE300C1880F /* FruitsViewController.swift */; };
+		0B812E3E291AD09100C1880F /* InfoFruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B812E3D291AD09100C1880F /* InfoFruitViewController.swift */; };
 		0B8FEDF12915AE1600703792 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF02915AE1600703792 /* AppDelegate.swift */; };
 		0B8FEDF32915AE1600703792 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF22915AE1600703792 /* SceneDelegate.swift */; };
-		0B8FEDF52915AE1600703792 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF42915AE1600703792 /* ViewController.swift */; };
+		0B8FEDF52915AE1600703792 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF42915AE1600703792 /* StartViewController.swift */; };
 		0B8FEDF82915AE1600703792 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF62915AE1600703792 /* Main.storyboard */; };
 		0B8FEDFA2915AE1900703792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8FEDF92915AE1900703792 /* Assets.xcassets */; };
 		0B8FEDFD2915AE1900703792 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8FEDFB2915AE1900703792 /* LaunchScreen.storyboard */; };
@@ -17,10 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B812E3B291ACFE300C1880F /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		0B812E3D291AD09100C1880F /* InfoFruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFruitViewController.swift; sourceTree = "<group>"; };
 		0B8FEDED2915AE1600703792 /* FruitCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8FEDF02915AE1600703792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B8FEDF22915AE1600703792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B8FEDF42915AE1600703792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B8FEDF42915AE1600703792 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		0B8FEDF72915AE1600703792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B8FEDF92915AE1900703792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B8FEDFC2915AE1900703792 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,7 +84,9 @@
 		0B8FEE052915AE6300703792 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0B8FEDF42915AE1600703792 /* ViewController.swift */,
+				0B8FEDF42915AE1600703792 /* StartViewController.swift */,
+				0B812E3B291ACFE300C1880F /* FruitsViewController.swift */,
+				0B812E3D291AD09100C1880F /* InfoFruitViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -174,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8FEE092915AEC000703792 /* Fruit.swift in Sources */,
-				0B8FEDF52915AE1600703792 /* ViewController.swift in Sources */,
+				0B812E3C291ACFE300C1880F /* FruitsViewController.swift in Sources */,
+				0B8FEDF52915AE1600703792 /* StartViewController.swift in Sources */,
+				0B812E3E291AD09100C1880F /* InfoFruitViewController.swift in Sources */,
 				0B8FEDF12915AE1600703792 /* AppDelegate.swift in Sources */,
 				0B8FEDF32915AE1600703792 /* SceneDelegate.swift in Sources */,
 			);
