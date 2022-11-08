@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B8FEDED2915AE1600703792 /* NetworkingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B8FEDED2915AE1600703792 /* FruitCalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitCalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8FEDF02915AE1600703792 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B8FEDF22915AE1600703792 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0B8FEDF42915AE1600703792 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		0B8FEDE42915AE1600703792 = {
 			isa = PBXGroup;
 			children = (
-				0B8FEDEF2915AE1600703792 /* NetworkingApp */,
+				0B8FEDEF2915AE1600703792 /* FruitCalories */,
 				0B8FEDEE2915AE1600703792 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		0B8FEDEE2915AE1600703792 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B8FEDED2915AE1600703792 /* NetworkingApp.app */,
+				0B8FEDED2915AE1600703792 /* FruitCalories.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0B8FEDEF2915AE1600703792 /* NetworkingApp */ = {
+		0B8FEDEF2915AE1600703792 /* FruitCalories */ = {
 			isa = PBXGroup;
 			children = (
 				0B8FEE072915AE8C00703792 /* Models */,
@@ -64,7 +64,7 @@
 				0B8FEE062915AE7A00703792 /* Storyboards */,
 				0B8FEDF92915AE1900703792 /* Assets.xcassets */,
 			);
-			path = NetworkingApp;
+			path = FruitCalories;
 			sourceTree = "<group>";
 		};
 		0B8FEE042915AE3500703792 /* App */ = {
@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B8FEDEC2915AE1600703792 /* NetworkingApp */ = {
+		0B8FEDEC2915AE1600703792 /* FruitCalories */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B8FEE012915AE1900703792 /* Build configuration list for PBXNativeTarget "NetworkingApp" */;
+			buildConfigurationList = 0B8FEE012915AE1900703792 /* Build configuration list for PBXNativeTarget "FruitCalories" */;
 			buildPhases = (
 				0B8FEDE92915AE1600703792 /* Sources */,
 				0B8FEDEA2915AE1600703792 /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = NetworkingApp;
+			name = FruitCalories;
 			productName = NetworkingApp;
-			productReference = 0B8FEDED2915AE1600703792 /* NetworkingApp.app */;
+			productReference = 0B8FEDED2915AE1600703792 /* FruitCalories.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B8FEDE82915AE1600703792 /* Build configuration list for PBXProject "NetworkingApp" */;
+			buildConfigurationList = 0B8FEDE82915AE1600703792 /* Build configuration list for PBXProject "FruitCalories" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B8FEDEC2915AE1600703792 /* NetworkingApp */,
+				0B8FEDEC2915AE1600703792 /* FruitCalories */,
 			);
 		};
 /* End PBXProject section */
@@ -327,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EZEA8LL4D8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkingApp/App/Info.plist;
+				INFOPLIST_FILE = FruitCalories/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pavellakhno.NetworkingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pavellakhno.FruitCalories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -355,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EZEA8LL4D8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NetworkingApp/App/Info.plist;
+				INFOPLIST_FILE = FruitCalories/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -366,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = pavellakhno.NetworkingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = pavellakhno.FruitCalories;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -377,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B8FEDE82915AE1600703792 /* Build configuration list for PBXProject "NetworkingApp" */ = {
+		0B8FEDE82915AE1600703792 /* Build configuration list for PBXProject "FruitCalories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B8FEDFF2915AE1900703792 /* Debug */,
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B8FEE012915AE1900703792 /* Build configuration list for PBXNativeTarget "NetworkingApp" */ = {
+		0B8FEE012915AE1900703792 /* Build configuration list for PBXNativeTarget "FruitCalories" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B8FEE022915AE1900703792 /* Debug */,

@@ -1,13 +1,9 @@
 //
 //  Fruit.swift
-//  NetworkingApp
+//  FruitCalories
 //
 //  Created by Павел Лахно on 04.11.2022.
 //
-
-//struct Fruits: Decodable {
-//    let fruits: [String : Fruit]?
-//}
 
 struct Fruit: Decodable {
     let genus: String?

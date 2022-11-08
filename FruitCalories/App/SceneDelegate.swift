@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  NetworkingApp
+//  FruitCalories
 //
 //  Created by Павел Лахно on 04.11.2022.
 //
