@@ -27,6 +27,8 @@ class FruitsViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = fruits[indexPath.row].name
+        content.image = UIImage(named: fruits[indexPath.row].name ?? "")
+        content.imageProperties.maximumSize = CGSize(width: 40.0, height: 40.0)
         cell.contentConfiguration = content
         return cell
     }
@@ -36,7 +38,7 @@ class FruitsViewController: UITableViewController {
         DispatchQueue.main.async {
             let alert = UIAlertController(
                 title: "Failed",
-                message: "You can see error in the Debug aria",
+                message: "You can see error in the Debug area",
                 preferredStyle: .alert
             )
 

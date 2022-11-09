@@ -16,36 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In this application you can see the composition of fruits" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-ge-qZt">
+                                <rect key="frame" x="35" y="234" width="305" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruits" translatesAutoresizingMaskIntoConstraints="NO" id="Gli-Vm-g6m">
+                                <rect key="frame" x="0.0" y="563" width="375" height="249"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="Bjw-Ve-l0F"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QW3-6v-wsY">
-                                <rect key="frame" x="141.66666666666666" y="658" width="92" height="40"/>
+                                <rect key="frame" x="141.66666666666666" y="499" width="92" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="btk-xc-FCg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Continue"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
                                 <connections>
                                     <segue destination="0vh-af-8wU" kind="presentation" modalPresentationStyle="fullScreen" id="r9j-39-0cc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In this application you can see the composition of fruits" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFg-ge-qZt">
-                                <rect key="frame" x="35" y="376" width="305" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wFg-ge-qZt" secondAttribute="trailing" constant="35" id="DY8-MH-LU0"/>
-                            <constraint firstItem="QW3-6v-wsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYE-ah-UTv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QW3-6v-wsY" secondAttribute="bottom" constant="80" id="Mu4-GG-4gX"/>
-                            <constraint firstItem="wFg-ge-qZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="X7s-cG-gQu"/>
-                            <constraint firstItem="wFg-ge-qZt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zyZ-NR-1h9"/>
+                            <constraint firstItem="wFg-ge-qZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="5uW-GG-YWw"/>
+                            <constraint firstItem="QW3-6v-wsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6SK-9d-62y"/>
+                            <constraint firstItem="QW3-6v-wsY" firstAttribute="top" secondItem="wFg-ge-qZt" secondAttribute="bottom" constant="205" id="9Bt-am-9tP"/>
+                            <constraint firstItem="wFg-ge-qZt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="LDD-74-gc9"/>
+                            <constraint firstAttribute="bottom" secondItem="Gli-Vm-g6m" secondAttribute="bottom" id="NdS-yY-08v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wFg-ge-qZt" secondAttribute="trailing" constant="35" id="SaA-mG-i6w"/>
+                            <constraint firstItem="Gli-Vm-g6m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Swb-DA-2Tt"/>
+                            <constraint firstItem="Gli-Vm-g6m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vnn-J7-4Sm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.188405797101453" y="46.875"/>
+            <point key="canvasLocation" x="-23.199999999999999" y="46.551724137931039"/>
         </scene>
         <!--Fruits-->
         <scene sceneID="IUH-nf-l2H">
@@ -250,8 +264,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fruits" width="91.666664123535156" height="61"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
