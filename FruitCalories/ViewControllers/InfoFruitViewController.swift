@@ -7,14 +7,8 @@
 
 import UIKit
 
-class InfoFruitViewController: UIViewController {
+final class InfoFruitViewController: UIViewController {
 
-    @IBOutlet weak var fruitImage: UIImageView! {
-        didSet {
-            fruitImage.layer.cornerRadius = fruitImage.frame.size.width / 2
-        }
-    }
-    
     @IBOutlet weak var fruitNameLabel: UILabel!
     @IBOutlet weak var genusLabel: UILabel!
     
@@ -23,6 +17,12 @@ class InfoFruitViewController: UIViewController {
     @IBOutlet weak var fatLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var carbohydratesLabel: UILabel!
+    
+    @IBOutlet weak var fruitImage: UIImageView! {
+        didSet {
+            fruitImage.layer.cornerRadius = fruitImage.frame.size.width / 2
+        }
+    }
     
     var fruit: Fruit!
     
