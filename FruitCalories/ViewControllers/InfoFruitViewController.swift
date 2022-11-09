@@ -17,11 +17,7 @@ final class InfoFruitViewController: UIViewController {
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var carbohydratesLabel: UILabel!
     
-    @IBOutlet weak var fruitImage: UIImageView! {
-        didSet {
-            fruitImage.layer.cornerRadius = fruitImage.frame.size.width / 2
-        }
-    }
+    @IBOutlet weak var fruitImage: UIImageView!
     
     var fruit: Fruit!
     
