@@ -11,6 +11,11 @@ class FruitsViewController: UITableViewController {
     
     private var fruits: [Fruit] = []
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        showSpinner(in: tableView)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let infoFruitVC = segue.destination as? InfoFruitViewController
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
@@ -47,20 +52,45 @@ class FruitsViewController: UITableViewController {
             self.present(alert, animated: true)
         }
     }
+    
+    private func showSpinner(in view: UIView) -> UIActivityIndicatorView {
+        let activityIndicator = UIActivityIndicatorView(style: .large)
+        activityIndicator.color = .gray
+        activityIndicator.startAnimating()
+        activityIndicator.center = view.center
+        activityIndicator.hidesWhenStopped = true
+
+        view.addSubview(activityIndicator)
+
+        return activityIndicator
+    }
 }
 
 // MARK: - Networking
 extension FruitsViewController {
 
+//    func fetchFruits() {
+//        NetworkManager.shared.fetch([Fruit].self, from: Link.fruitsURL.rawValue) { [weak self] result in
+//            switch result {
+//            case .success(let fruits):
+//                self?.fruits = fruits
+//                self?.tableView.reloadData()
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//                self?.failedAlert()
+//            }
+//        }
+//    }
+    
     func fetchFruits() {
-        NetworkManager.shared.fetch([Fruit].self, from: Link.fruitsURL.rawValue) { [weak self] result in
+        NetworkManager.shared.fetchFruits(from: Link.fruitsURL.rawValue) { [weak self]
+            result in
             switch result {
             case .success(let fruits):
                 self?.fruits = fruits
                 self?.tableView.reloadData()
             case .failure(let error):
                 print(error.localizedDescription)
-                self?.failedAlert()
             }
         }
     }
