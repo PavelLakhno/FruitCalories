@@ -10,10 +10,11 @@ import UIKit
 class FruitsViewController: UITableViewController {
     
     private var fruits: [Fruit] = []
+    private var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showSpinner(in: tableView)
+        activityIndicator = showSpinner(in: tableView)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,7 +33,7 @@ class FruitsViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         content.text = fruits[indexPath.row].name
-        content.image = UIImage(named: fruits[indexPath.row].name ?? "")
+        content.image = UIImage(named: fruits[indexPath.row].name)
         content.imageProperties.maximumSize = CGSize(width: 40.0, height: 40.0)
         cell.contentConfiguration = content
         return cell
@@ -68,19 +69,6 @@ class FruitsViewController: UITableViewController {
 
 // MARK: - Networking
 extension FruitsViewController {
-
-//    func fetchFruits() {
-//        NetworkManager.shared.fetch([Fruit].self, from: Link.fruitsURL.rawValue) { [weak self] result in
-//            switch result {
-//            case .success(let fruits):
-//                self?.fruits = fruits
-//                self?.tableView.reloadData()
-//            case .failure(let error):
-//                print(error.localizedDescription)
-//                self?.failedAlert()
-//            }
-//        }
-//    }
     
     func fetchFruits() {
         NetworkManager.shared.fetchFruits(from: Link.fruitsURL.rawValue) { [weak self]
@@ -88,6 +76,7 @@ extension FruitsViewController {
             switch result {
             case .success(let fruits):
                 self?.fruits = fruits
+                self?.activityIndicator.stopAnimating()
                 self?.tableView.reloadData()
             case .failure(let error):
                 print(error.localizedDescription)

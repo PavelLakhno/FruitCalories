@@ -6,9 +6,9 @@
 //
 
 struct Fruit: Decodable {
-    let genus: String?
-    let name: String?
-    let nutritions: Nutrition?
+    let genus: String
+    let name: String
+    let nutritions: Nutrition
     
     init(fruitData: [String: Any]) {
         genus = fruitData["genus"] as? String ?? ""
@@ -23,11 +23,11 @@ struct Fruit: Decodable {
 }
 
 struct Nutrition: Decodable {
-    let carbohydrates: Double?
-    let protein: Double?
-    let fat: Double?
-    let calories: Double?
-    let sugar: Double?
+    let carbohydrates: Double
+    let protein: Double
+    let fat: Double
+    let calories: Double
+    let sugar: Double
     
     init(nutritionData: [String: Any]) {
         carbohydrates = nutritionData["carbohydrates"] as? Double ?? 0
