@@ -2,9 +2,11 @@
 
 _Webservice which provides data for all kinds of fruit! We can use Fruityvice to find out interesting information about fruit. The simple application for parsing JSON . 
 
-![[Запись экрана 2023-10-30 в 14.34.45.mov]]
 
-## [📌 General information]
+https://github.com/PavelLakhno/FruitCalories/assets/24975836/1782b386-e01e-4da1-a482-cdc5b9edc56a
+
+
+## 📌 General information
 
 Used 3 Controllers: StratVC, FruitsTableVC and InfoFruitVC for displays the information for every fruits.
 
